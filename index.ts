@@ -20,8 +20,6 @@ class Shopping {
 class VIP extends Shopping {
 	CalculateV(Item: number, Price: number):void {
 		let total: number;
-		//this.item = Item;
-		//this.price = Price;
 		total = super.Calculate(Item, Price);
 		if(total >= 500){
 			total = total*0.8;
@@ -36,8 +34,6 @@ class VIP extends Shopping {
 class General extends Shopping {
 	CalculateG(Item: number, Price: number):void {
 		let total: number;
-		//this.item = Item;
-		//this.price = Price;
 		total = super.Calculate(Item, Price);
 		if(item > 3 && total >= 1000){
 			total = total*0.85;
